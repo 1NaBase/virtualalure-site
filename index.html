@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth bg-gray-900 text-gray-200">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtuallure - IA & Automação com n8n</title>
+  <meta name="description" content="Transforme seu atendimento e processos com IA e n8n: automação inteligente, integração de sistemas e tecnologias futuristas." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="font-inter flex flex-col min-h-screen bg-gray-900 text-gray-200">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#hero" class="flex items-center space-x-2 select-none" aria-label="Virtuallure - Home">
+        <svg class="w-10 h-10 neon-purple" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" >
+          <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+          <path d="M2 17l10 5 10-5"></path>
+          <path d="M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="text-2xl font-orbitron font-bold neon-purple">Virtuallure</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="flex space-x-8 text-gray-300 font-semibold tracking-wide text-lg">
+          <li><a href="sobre" class="neon-link hover:underline focus:underline">Sobre</a></li>
+          <li><a href="servicos" class="neon-link hover:underline focus:underline">Serviços</a></li>
+          <li><a href="depoimentos" class="neon-link hover:underline focus:underline">Depoimentos</a></li>
+          <li><a href="contato" class="neon-link hover:underline focus:underline">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-20">
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[600px] flex items-center overflow-hidden">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10 w-full">
+        <div class="max-w-xl text-center md:text-left" data-animate>
+          <h1 class="text-5xl md:text-6xl font-orbitron font-extrabold neon-blue leading-tight mb-6">
+            Automatize sua empresa com IA e n8n
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300 mb-8">
+            Transforme seu atendimento e processos com inteligência artificial avançada e automação inteligente usando n8n.
+          </p>
+          <a href="#contato" class="btn-neon inline-block font-semibold rounded-lg px-8 py-4 shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-500/60" role="button" aria-label="Solicitar Demonstração">
+            Solicitar Demonstração
+          </a>
+        </div>
+        <div class="w-full max-w-lg" aria-hidden="true" data-animate>
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08bd5b0e-699e-4ba2-baef-59090d96975a.png" alt="Futuristic AI interface showing automated workflows in n8n platform with neurons firing and data streams flowing in a sleek dark background with neon pink and blue accents" class="rounded-xl shadow-lg" loading="lazy" onerror="this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/43444527-8760-40c3-b907-4bbd0910af32.png'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="max-w-7xl mx-auto px-6 py-20">
+      <div class="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
+        <div class="md:w-1/2" data-animate>
+          <h2 class="text-4xl font-orbitron font-bold neon-purple mb-6 text-center md:text-left">Sobre a Empresa</h2>
+          <p class="text-gray-300 text-lg leading-relaxed">
+            Na Virtuallure, somos especialistas em IA e automação, utilizando ferramentas como n8n para criar soluções inteligentes. Nossa missão é revolucionar empresas com inteligência artificial, simplificando processos, integrando sistemas e impulsionando a eficiência através de automações personalizadas.
+          </p>
+        </div>
+        <div class="md:w-1/2" data-animate>
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/54c42ac1-b5f7-44e9-a2a8-1f35feaf8501.png" alt="Team of professionals collaborating on AI projects in a modern office with screens showing n8n automation workflows glowing in neon purple and blue" class="rounded-xl shadow-lg" loading="lazy" onerror="this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7dff242d-5561-4803-973c-7e8c115a445c.png'" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="bg-gray-800 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-orbitron font-bold neon-blue text-center mb-12" data-animate>Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+          <!-- Card 1 -->
+          <article class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 hover:border-purple-600 transition-colors" data-animate>
+            <div class="flex items-center justify-center mb-6">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="Logo WhatsApp em neon para automação de mensagens" class="w-14 h-14 neon-purple" />
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Logo Telegram em neon para automação de chat" class="w-14 h-14 ml-4 neon-blue" />
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Logo Instagram em neon para engajamento social automatizado" class="w-14 h-14 ml-4 neon-purple" />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 neon-purple">Automação WhatsApp, Telegram e Instagram com IA</h3>
+            <p class="text-gray-400 leading-relaxed">
+              Utilize IA para respostas instantâneas, integração com CRM e engajamento automatizado nas redes sociais, apoiado por n8n.
+            </p>
+          </article>
+          <!-- Card 2 -->
+          <article class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 hover:border-blue-600 transition-colors" data-animate>
+            <div class="flex items-center justify-center mb-6">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/n8n.svg" alt="Logo n8n em neon azul para fluxos automatizados" class="w-14 h-14 neon-blue" />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 neon-blue">Fluxos personalizados no n8n com IA</h3>
+            <p class="text-gray-400 leading-relaxed">
+              automações complexas com inteligência artificial integrada, conectando múltiplas plataformas e sistemas para processos inovadores.
+            </p>
+          </article>
+          <!-- Card 3 -->
+          <article class="bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-700 hover:border-purple-600 transition-colors" data-animate>
+            <div class="flex items-center justify-center mb-6">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b8445ec1-c5b7-4055-9991-045c4845b76c.png" alt="Ícone de cérebro de IA em neon roxo representando integração inteligente" class="w-14 h-14 rounded-full border-2 neon-purple" />
+            </div>
+            <h3 class="text-2xl font-semibold mb-3 neon-purple">Integração de sistemas e CRM com IA</h3>
+            <p class="text-gray-400 leading-relaxed">
+              Implemente IA para dados em tempo real, elimine retrabalho e aumente produtividade através de integrações automatizadas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="text-4xl font-orbitron font-bold neon-purple text-center mb-12" data-animate>Depoimentos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <blockquote class="bg-gray-900 border border-purple-600 rounded-xl p-8 shadow-lg neon-purple flex flex-col items-center text-center" data-animate>
+          <img src="https://i.pravatar.cc/80?img=12" alt="Avatar cliente Ana Paula" class="rounded-full mb-4" loading="lazy" />
+          <p class="text-gray-300 italic mb-4">"A IA integrada nos serviços da Virtuallure tornou nossa automação com n8n ainda mais eficiente e precisa."</p>
+          <footer class="text-purple-400 font-semibold">— Bruno, CEO do setor de tecnologia</footer>
+        </blockquote>
+        <blockquote class="bg-gray-900 border border-blue-600 rounded-xl p-8 shadow-lg neon-blue flex flex-col items-center text-center" data-animate>
+          <img src="https://i.pravatar.cc/80?img=32" alt="Avatar cliente Carlos Eduardo" class="rounded-full mb-4" loading="lazy" />
+          <p class="text-gray-300 italic mb-4">"Os fluxos com IA no n8n aumentaram nossa produtividade em 50%, uma revolução."</p>
+          <footer class="text-blue-400 font-semibold">— Eduarda, Diretora financeira</footer>
+        </blockquote>
+        <blockquote class="bg-gray-900 border border-purple-600 rounded-xl p-8 shadow-lg neon-purple flex flex-col items-center text-center" data-animate>
+          <img src="https://i.pravatar.cc/80?img=45" alt="Avatar cliente Mariana Silva" class="rounded-full mb-4" loading="lazy" />
+          <p class="text-gray-300 italic mb-4">"A integração com IA superou expectativas, transformando nossos processos internos completamente."</p>
+          <footer class="text-purple-400 font-semibold">— Mariana Silva, Gerente de Operações</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-gray-800 py-20">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-orbitron font-bold neon-blue text-center mb-10" data-animate>Contato</h2>
+        <p class="text-center text-gray-300 mb-8" data-animate>
+          Fale com nossa equipe e descubra como a IA com n8n pode crescer sua empresa com tecnologia inteligente.
+        </p>
+        <form id="contact-form" class="bg-gray-900 rounded-xl p-8 shadow-lg max-w-xl mx-auto" data-animate aria-label="Formulário de contato">
+          <div class="mb-6">
+            <label for="nome" class="block text-gray-300 font-semibold mb-2">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome" aria-required="true" class="w-full rounded-md bg-gray-800 border border-gray-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-500 text-gray-200 px-4 py-3 outline-none transition" />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block text-gray-300 font-semibold mb-2">Email</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com" aria-required="true" class="w-full rounded-md bg-gray-800 border border-gray-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-500 text-gray-200 px-4 py-3 outline-none transition" />
+          </div>
+          <label for="telefone" class="block text-gray-300 font-semibold mb-2">Telefone</label>
+          <input 
+          type="tel" 
+          id="telefone" 
+          name="telefone" 
+          required 
+           placeholder="(11) 99999-9999" 
+            aria-required="true"
+            class="w-full rounded-md bg-gray-800 border border-gray-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-500 text-gray-200 px-4 py-3 outline-none transition" 
+            pattern="\(\d{2}\)\s\d{4,5}-\d{4}" 
+            title="Digite no formato (11) 99999-9999"
+            />
+          <div class="mb-6">
+            <label for="mensagem" class="block text-gray-300 font-semibold mb-2">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem" aria-required="true" class="w-full rounded-md bg-gray-800 border border-gray-700 focus:border-purple-600 focus:ring-2 focus:ring-purple-500 text-gray-200 px-4 py-3 outline-none transition resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full btn-neon font-semibold rounded-lg px-6 py-4 shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-500/60" aria-label="Enviar mensagem">
+            Enviar
+          </button>
+          <p id="form-message" class="mt-4 text-sm text-green-400 text-center hidden" role="alert"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+ <!-- Footer -->
+<footer class="bg-gray-900 border-t border-gray-800 py-8">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm space-y-4 md:space-y-0">
+    <div class="flex space-x-6">
+      <a href="mailto:contato@virtuallure.com" class="neon-link flex items-center gap-2 hover:underline focus:underline" aria-label="Email oficial">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z"></path>
+          <path d="M22 6l-10 7L2 6"></path>
+        </svg>
+        contact.oficialvirtuallure@gmail.com
+      </a>
+    </div>
+    <div class="flex space-x-6">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/oficial-virtuallure-162812383" target="_blank" rel="noopener" aria-label="LinkedIn" class="neon-link hover:underline focus:underline">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48s1.34 2.98 2.98 2.98c1.64 0 2.98-1.34 2.98-2.98S6.62 3.5 4.98 3.5zM2.4 9h5.16v12H2.4V9zm7.44 0h4.96v1.64h.07c.69-1.3 2.38-2.67 4.89-2.67 5.23 0 6.2 3.44 6.2 7.91V21h-5.16v-6.48c0-1.55-.03-3.55-2.16-3.55-2.16 0-2.49 1.68-2.49 3.42V21H9.84V9z"/>
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/virtuallure" target="_blank" rel="noopener" aria-label="Twitter" class="neon-link hover:underline focus:underline">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022 6a9.1 9.1 0 01-2.88 1.1 4.52 4.52 0 00-7.72 4.12A12.85 12.85 0 013 4.5a4.5 4.5 0 001.39 6.03A4.48 4.48 0 012 9.7v.05a4.52 4.52 0 003.6 4.43 4.52 4.52 0 01-2.04.08 4.52 4.52 0 004.22 3.13A9.05 9.05 0 012 19.54a12.73 12.73 0 006.92 2.03c8.3 0 12.84-6.87 12.84-12.84 0-.2 0-.39-.01-.58A9.18 9.18 0 0023 3z"/>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/oficial.virtuallure" target="_blank" rel="noopener" aria-label="Instagram" class="neon-link hover:underline focus:underline">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <!-- Telegram -->
+      <a href="https://t.me/oficialvirtuallure_bot" target="_blank" rel="noopener" aria-label="Telegram" class="neon-link hover:underline focus:underline">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.61 8.18l-1.87 8.84c-.14.66-.52.82-1.05.51l-2.9-2.14-1.4 1.35c-.16.16-.3.3-.61.3l.22-3.11 5.66-5.12c.25-.22-.05-.34-.38-.12l-7.01 4.41-3.01-.94c-.65-.2-.66-.65.14-.97l11.77-4.54c.55-.21 1.03.13.85.95z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="text-center md:text-left">© 2025 Virtuallure. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+  <script src="js/form.js"></script> 
+  <script src="js/hero-canvas.js"></script> 
+  <script src="js/scroll-animation.js"></script> 
+  <script src="js/telefone-mask.js"></script> 
+   
+</content>
+</create_file>

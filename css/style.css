@@ -1,0 +1,93 @@
+
+    /* Fonts */
+    .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Neon colors */
+    .neon-blue {
+      color: #3b82f6;
+      text-shadow:
+        0 0 5px #3b82f6,
+        0 0 10px #3b82f6,
+        0 0 20px #2563eb,
+        0 0 40px #2563eb;
+    }
+    .neon-purple {
+      color: #8b5cf6;
+      text-shadow:
+        0 0 5px #8b5cf6,
+        0 0 10px #8b5cf6,
+        0 0 20px #7c3aed,
+        0 0 40px #7c3aed;
+    }
+    /* Neon button and link hover */
+    .btn-neon {
+      background-color: #8b5cf6;
+      box-shadow:
+        0 0 5px #8b5cf6,
+        0 0 10px #8b5cf6,
+        0 0 20px #7c3aed,
+        0 0 40px #7c3aed;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-neon:hover,
+    .btn-neon:focus {
+      background-color: #5b21b6;
+      box-shadow:
+        0 0 10px #5b21b6,
+        0 0 20px #5b21b6,
+        0 0 30px #4c1d95,
+        0 0 50px #4c1d95;
+      outline: none;
+    }
+    a.neon-link {
+      color: #3b82f6;
+      text-shadow:
+        0 0 5px #3b82f6,
+        0 0 10px #3b82f6;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    a.neon-link:hover,
+    a.neon-link:focus {
+      color: #2563eb;
+      text-shadow:
+        0 0 10px #2563eb,
+        0 0 20px #2563eb;
+      outline: none;
+    }
+    /* Scroll animations */
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    [data-animate].animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Canvas full size */
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* Header fixed and shadow */
+    header {
+      backdrop-filter: saturate(180%) blur(10px);
+      background-color: rgba(15, 23, 42, 0.85);
+      border-bottom: 1px solid #2c2f3a;
+      z-index: 1000;
+    }
+    /* Focus outline for accessibility */
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid #8b5cf6;
+      outline-offset: 2px;
+    }
+  
